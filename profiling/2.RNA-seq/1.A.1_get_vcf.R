@@ -3,6 +3,10 @@
 
 
 library("farmeR")
+library("data.table")
+
+###
+gt0 <- fread("largedata/GAPIT.RNAseq.hmp_438K_imputed2.csv", data.table=FALSE)
 
 #### genotypes
 gt0 <- read.table("/home/jolyang/dbcenter/HapMap/HapMap3/vcf.header", header=F)
